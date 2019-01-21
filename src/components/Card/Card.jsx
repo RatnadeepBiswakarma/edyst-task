@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card-Style.css";
-import Sprite from './Sprite/Sprite'
+import Sprite from "./Sprite/Sprite";
+import Description from "./Description/Description";
 
 const Card = props => {
   let card = props.card;
@@ -15,10 +16,7 @@ const Card = props => {
         <p className="tag">{card.name}</p>
       </section>
       <section className="card-body">
-        <h3 className="name">{card.name}</h3>
-        <div className="description">
-          <p className="info">{card.description}</p>
-        </div>
+        <Description card={card} />
         <Sprite card={card} />
       </section>
     </div>
