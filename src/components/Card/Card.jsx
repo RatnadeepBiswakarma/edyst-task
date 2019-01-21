@@ -12,14 +12,19 @@ const Card = props => {
       }}
       className="card-container"
     >
+    {/* card header section */}
       <section className="card-header">
         <span style={{
           backgroundColor: card.cardColors.tagbg
         }} className="tag">{card.name}</span>
         <span className="arrow">→</span>
       </section>
+      {/* card body section */}
+
       <section className="card-body">
+      {/* body description component  */}
         <Description card={card} />
+        {/* card image component */}
         <Sprite card={card} />
       </section>
     </div>
