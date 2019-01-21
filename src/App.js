@@ -6,6 +6,7 @@ class App extends Component {
   state = {
     data: []
   };
+  // api request from server
   componentDidMount() {
     fetch("https://dev-util.edyst.com/challenge/pokemons/random")
       .then(res => res.json())
@@ -16,9 +17,8 @@ class App extends Component {
     let { data } = this.state;
     return (
       <div className="App">
-        {data && data.map(card => (
-          <Card key={card.tag} card={card} />
-        ))}
+        {/* looping over data and generating UI */}
+        {data && data.map(card => <Card key={card.tag} card={card} />)}
       </div>
     );
   }
