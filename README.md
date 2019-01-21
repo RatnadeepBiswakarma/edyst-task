@@ -1,16 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Edyst Frontend Challenge
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+This project was coded as Edyst interview challenge.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instruction to run the project locally
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Clone or Download project to your local machine.
+2. `cd` to the project folder.
+3. Run `npm install` to install `npm` with dependencies (it will take some time based on your PC)
+4. Run `npm start` to start the the development server.
+5. By default one browser window will open
+6. Or go to [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Others instructions
 
 ### `npm test`
 
