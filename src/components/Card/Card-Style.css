@@ -1,0 +1,18 @@
+.card-container {
+    width: 300px;
+    height: auto;
+    padding: 15px;
+}
+.photo-container {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    border: 1px solid grey;
+    border-radius: 100%;
+}
+.photo-container > img {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
