@@ -13,7 +13,10 @@ const Card = props => {
       className="card-container"
     >
       <section className="card-header">
-        <p className="tag">{card.name}</p>
+        <span style={{
+          backgroundColor: card.cardColors.tagbg
+        }} className="tag">{card.name}</span>
+        <span className="arrow">→</span>
       </section>
       <section className="card-body">
         <Description card={card} />

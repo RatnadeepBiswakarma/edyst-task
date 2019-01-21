@@ -2,7 +2,6 @@ import React from "react";
 
 const Sprite = props => {
   let card = props.card;
-  let cardColors = card.cardColors;
   return (
     <div className="photo-container">
       <img
