@@ -6,6 +6,11 @@
 
 This project was coded as Edyst interview challenge.
 
+## Live Demo
+
+See it live [here](https://pokemon-app-ratnadeep.netlify.com/)
+or copy the link https://pokemon-app-ratnadeep.netlify.com/
+
 ## Instruction to run the project locally
 
 1. Clone or Download project to your local machine.
