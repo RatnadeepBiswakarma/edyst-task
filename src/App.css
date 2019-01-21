@@ -1,5 +1,11 @@
 .App {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 578px) {
+  .App {
+    display: block;
+  }
 }

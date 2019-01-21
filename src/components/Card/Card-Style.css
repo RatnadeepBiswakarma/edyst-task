@@ -52,3 +52,10 @@
 .description {
   transform: rotate(5deg);
 }
+
+@media screen and (max-width: 578px) {
+  .card-container {
+    width: 91vw;
+    margin: 0;
+  }
+}
