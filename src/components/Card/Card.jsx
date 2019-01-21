@@ -1,12 +1,9 @@
 import React from "react";
 import "./Card-Style.css";
+import Sprite from './Sprite/Sprite'
 
 const Card = props => {
   let card = props.card;
-  let cardStyle = {
-    color: card.text,
-    backgroundColor: card.bg
-  };
   return (
     <div
       style={{
@@ -22,9 +19,7 @@ const Card = props => {
         <div className="description">
           <p className="info">{card.description}</p>
         </div>
-        <div className="photo-container">
-          <img src={card.sprite} alt="Pokemon" />
-        </div>
+        <Sprite card={card} />
       </section>
     </div>
   );
