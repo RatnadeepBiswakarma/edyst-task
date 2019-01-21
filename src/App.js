@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
 import Card from "./components/Card/Card";
+import Loader from './components/Loader/Loader';
 
 class App extends Component {
   state = {
-    data: []
+    data: [],
+    loader: true
   };
   // api request from server
   componentDidMount() {
@@ -14,11 +16,14 @@ class App extends Component {
       .catch(err => alert(`Failed to fetch data from server ${err}`));
   }
   render() {
-    let { data } = this.state;
+    let { data, loader } = this.state;
     return (
-      <div className="App">
-        {/* looping over data and generating UI */}
-        {data && data.map(card => <Card key={card.tag} card={card} />)}
+      <div>
+        {loader && <Loader />}
+        <div className="App">
+          {/* looping over data and generating UI */}
+          {/* {data && data.map(card => <Card key={card.tag} card={card} />)} */}
+        </div>
       </div>
     );
   }
