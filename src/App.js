@@ -10,9 +10,9 @@ class App extends Component {
   };
   // api request from server
   componentDidMount() {
-    fetch("https://dev-util.edyst.com/challenge/pokemons/random")
+    fetch("https://dev-util.edyst.com/challenge/pokemons/random?any=1")
       .then(res => res.json())
-      .then(data => this.setState({ data: data }))
+      .then(data => this.setState({ data: data, loader: false }))
       .catch(err => alert(`Failed to fetch data from server ${err}`));
   }
   render() {
@@ -22,7 +22,7 @@ class App extends Component {
         {loader && <Loader />}
         <div className="App">
           {/* looping over data and generating UI */}
-          {/* {data && data.map(card => <Card key={card.tag} card={card} />)} */}
+          {data && data.map(card => <Card key={card.tag} card={card} />)}
         </div>
       </div>
     );
