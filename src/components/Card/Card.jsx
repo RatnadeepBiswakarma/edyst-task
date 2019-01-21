@@ -8,7 +8,12 @@ const Card = props => {
     backgroundColor: card.bg
   };
   return (
-    <div className="card-container">
+    <div
+      style={{
+        backgroundColor: card.cardColors.bg
+      }}
+      className="card-container"
+    >
       <section className="card-header">
         <p className="tag">{card.name}</p>
       </section>
@@ -18,7 +23,7 @@ const Card = props => {
           <p className="info">{card.description}</p>
         </div>
         <div className="photo-container">
-        <img src={card.sprite} alt="Pokemon"/>
+          <img src={card.sprite} alt="Pokemon" />
         </div>
       </section>
     </div>
